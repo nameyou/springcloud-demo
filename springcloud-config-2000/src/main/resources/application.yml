@@ -1,0 +1,15 @@
+
+server:
+  port: 2000
+
+spring:
+  application:
+    name: microservice-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nameyou/spingconfig-demo.git   #GitHub\u4E0A\u9762\u7684git\u4ED3\u5E93\u540D\u5B57
+
+
+

@@ -1,0 +1,11 @@
+server:
+  port: 7001
+
+
+# 客户端
+eureka:
+  client:
+    register-with-eureka: false  # 客户端自己不用注册而是去注册中心去找服务
+    service-url:
+      defaultZone: http://www.eureka01.com:9001/eureka,http://www.eureka02.com:9002/eureka,http://www.eureka03.com:9003/eureka
+

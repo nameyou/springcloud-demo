@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spirngcloud-api-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-provider-01/pom.xml" />
+        <option value="$PROJECT_DIR$/spirngcloud-consumer-01/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka-01/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka-02/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka-03/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-provider-02/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-provider-03/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-fegin/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-provider-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-consumer-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config-2000/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config-client-1000/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

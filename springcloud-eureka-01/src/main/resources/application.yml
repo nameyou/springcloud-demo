@@ -1,0 +1,21 @@
+server:
+  port: 9001
+
+eureka:
+  server:
+    enable-self-preservation: true # 可以禁用eureka的自我保护机制 不推荐
+  instance:
+    hostname: www.eureka01.com  # eureka\u6CE8\u518C\u4E2D\u5FC3\u7684\u5B9E\u4F8B\u540D\u5B57
+  client:
+    fetch-registry: false  #  \u6CE8\u518C\u4E2D\u5FC3\u7684\u804C\u8D23\u662F\u7EF4\u62A4\u5B9E\u4F8B\uFF0C\u4E0D\u9700\u8981\u53BB\u68C0\u7D22\u670D\u52A1
+    register-with-eureka: false  # \u8BE5\u5E94\u7528\u4E3A\u6CE8\u518C\u4E2D\u5FC3\uFF0C\u4E0D\u50CF\u6CE8\u518C\u4E2D\u5FC3\u6CE8\u518C\u81EA\u5DF1
+    service-url:
+      defaultZone: http://www.eureka02.com:9002/eureka/,http://www.eureka03.com:9003/eureka/   # eureka\u670D\u52A1\u7AEF\u6CE8\u518C\u4E2D\u5FC3\u7684\u5730\u5740
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    # eureka\u670D\u52A1\u7AEF\u6CE8\u518C\u4E2D\u5FC3\u7684\u5730\u5740
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        exclude: "*"

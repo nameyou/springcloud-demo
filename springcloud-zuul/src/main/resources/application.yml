@@ -1,0 +1,29 @@
+
+server:
+  port: 2000
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.eureka01.com:9001/eureka,http://www.eureka02.com:9002/eureka,http://www.eureka03.com:9003/eureka
+  instance:
+    instance-id: microservice-zuul-2000
+    prefer-ip-address: true
+
+# 配置网关zuul的访问规则 。 未配置访问规则前：http://www.myzuul.com:2000/server-provider-01/user/get/1
+zuul:
+  prefix: /lee   # 访问加前缀
+  ignored-services: "*" # server-provider-01 # 忽略真实微服务的名字，真实微服务不可访问
+  routes:
+    product:
+      serviceId: server-provider-01  # 真实服务的名称
+      path: /product/**                   # 代替真实服务的名字访问
+    user:
+      serviceId: server-provider-01    # 以/user/开头的访问都交给server-provider-01
+      path: /user/**
+
+# 服务名称
+spring:
+  application:
+    name: micservice-zull-gateway
